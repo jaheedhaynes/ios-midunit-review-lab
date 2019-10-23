@@ -21,6 +21,15 @@ Input: `Hello, there`
 
 Output: `HeLlO, tHeRe`
 
+var input2 = Array(input).enumerated()
+for (index, char) in input2 {
+    if index % 2 == 0 {
+        print(char.uppercased(), terminator: "")
+    } else {
+        print(char, terminator: "")
+    }
+}
+
 
 3. **Given a String, return a String with all occurrences of a given letter removed**
 
